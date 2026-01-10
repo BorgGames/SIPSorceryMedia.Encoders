@@ -30,7 +30,7 @@ jobs:
 
       # Pack the NuGet package
       - name: Pack NuGet package
-        run: dotnet pack src\SIPSorceryMedia.Encoders.csproj -p:NuspecFile=SIPSorceryMedia.Encoders.nuspec -c Release --no-build
+        run: dotnet pack src\SIPSorceryMedia.Encoders.csproj -p:NuspecFile=src\SIPSorceryMedia.Encoders.nuspec -c Release --no-build
 
       # Publish to NuGet
       - name: Publish NuGet package
